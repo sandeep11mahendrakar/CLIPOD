@@ -1,9 +1,121 @@
-What You Are Building
-Clipod is a clip-on Linux audio player with a 1.3-inch OLED, six physical buttons, a 3.5mm headphone jack, a microSD slot, and Wi-Fi. It plays user-owned music files from the SD card and streams audio from YouTube over Wi-Fi. It requires no phone during use. It has no subscriptions. It costs around $65 at retail.
-The software is fully open source. The YouTube streaming is handled by yt-dlp and ffmpeg, operated by the user for personal use. The companion app is a file transfer tool. No audio is permanently downloaded from YouTube in the default firmware.
-The legal risk is low because the product is open source, non-commercial in its software, and positions YouTube streaming as a personal-use client rather than a piracy tool. The hardware sale is the business.
-The development path starts with a Raspberry Pi Zero 2W running all the software, then moves to a custom PCB, then to a crowdfunded production run.
-The one thing to build first
-Get MPD + yt-dlp + ffmpeg + an SSD1306 OLED + 6 GPIO buttons working on a Raspberry Pi Zero 2W. Everything else follows from that working prototype.
+# Clipod: A Distraction-Free Offline Music Player
+
+**Clipod** is a small, clip-on, open-source Linux audio player designed for athletes, minimalists, and anyone who wants to enjoy music without the constant distractions of a smartphone. Think of it as the spiritual successor to the iPod Shuffle, but modernized for the 2020s.
+
+---
+
+## 🚀 The Vision
+
+Most people use smartphones for music, which brings notifications and social media distractions. Clipod fills the gap for a sub-$70 dedicated device with physical controls and zero subscriptions.
+
+* 
+**No Phone Required:** Once set up, it works completely independently.
 
 
+* 
+**Dual-Source Audio:** Play high-quality local files (MP3, FLAC, etc.) from a microSD card or stream audio from YouTube over Wi-Fi.
+
+
+* **Distraction-Free:** No apps, no messages, no scrolling. Just your music.
+
+
+
+---
+
+## 🛠️ Hardware Specifications
+
+The hardware is designed to be lightweight (under 25g) and durable.
+
+| Component | Specification |
+| --- | --- |
+| **SoC** | Rockchip RK3128 (v1) / Allwinner V3s (v2 target) 
+
+ |
+| **Display** | 1.3" OLED (128×64 pixels), SSD1306/SH1106 
+
+ |
+| **Audio** | 3.5mm Headphone Jack (Wired-only philosophy) 
+
+ |
+| <br>**Storage** | microSD slot supporting up to 1TB 
+
+ |
+| **Battery** | 600mAh LiPo (10-14 hours playback) 
+
+ |
+| **Connectivity** | 2.4GHz 802.11n Wi-Fi (for streaming & setup) 
+
+ |
+| **Controls** | 6 physical dome tactile switches 
+
+ |
+
+---
+
+## 💻 Software Architecture
+
+Clipod runs a minimal, stripped-down Linux kernel (5.15 LTS) built using **Buildroot**.
+
+* 
+**Audio Engine:** Powered by **MPD (Music Player Daemon)** for local file management.
+
+
+* 
+**YouTube Client:** A custom daemon utilizing `yt-dlp` for stream URL extraction and `ffmpeg` for real-time audio playback.
+
+
+* 
+**UI/UX:** A lightweight Python-based UI using the `luma.oled` library.
+
+
+* 
+**Companion App:** An open-source Android/iOS app for easy Wi-Fi file transfers and Spotify playlist migration (metadata only).
+
+
+
+---
+
+## ⚖️ Legal & Open Source
+
+Clipod is built on a foundation of transparency and user ownership.
+
+* 
+**Software:** Licensed under MIT/GPL.
+
+
+* 
+**Hardware:** Schematics and CAD files published under CERN-OHL-P.
+
+
+* **Streaming:** The device is a personal-use client. It does not download or "rip" YouTube content to disk; it streams in real-time, which falls under "Fair Dealing" in many jurisdictions like India and the EU.
+
+
+
+---
+
+## 📅 Roadmap
+
+1. 
+**Phase 0 (Software Prototype):** Running the stack on a Raspberry Pi Zero 2W.
+
+
+2. 
+**Phase 1 (Custom PCB):** KiCad design and assembly of dedicated hardware.
+
+
+3. 
+**Phase 2 (Beta):** Field testing with runners and gym-goers.
+
+
+4. 
+**Phase 3 (Production):** Crowdfunding campaign to launch the first 500+ units.
+
+
+
+---
+
+### Want to contribute?
+
+Check out the `/firmware` and `/hardware` directories to get started with the Raspberry Pi Zero 2W prototype.
+
+> **Would you like me to help you draft the "Getting Started" section for developers using the Raspberry Pi Zero 2W?**
