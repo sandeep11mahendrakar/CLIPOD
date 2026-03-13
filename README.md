@@ -114,8 +114,3 @@ Clipod is built on a foundation of transparency and user ownership.
 
 ---
 
-### Want to contribute?
-
-Check out the `/firmware` and `/hardware` directories to get started with the Raspberry Pi Zero 2W prototype.
-
-> **Would you like me to help you draft the "Getting Started" section for developers using the Raspberry Pi Zero 2W?**
