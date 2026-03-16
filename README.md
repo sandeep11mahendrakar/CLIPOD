@@ -3,6 +3,8 @@
 **Clipod** is a small, clip-on, open-source Linux audio player designed for athletes, minimalists, and anyone who wants to enjoy music without the constant distractions of a smartphone. Think of it as the spiritual successor to the iPod Shuffle, but modernized for the 2020s.
 
 ---
+![Alternative text for the image](path/to/your/image.svg)
+
 
 ## 🚀 The Vision
 
