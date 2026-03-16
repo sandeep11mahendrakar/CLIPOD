@@ -1,0 +1,249 @@
+<svg width="100%" viewBox="0 0 680 980" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      text { font-family: Arial, sans-serif; }
+      .th { font-size: 14px; font-weight: 500; fill: #1f1f1e; }
+      .ts { font-size: 12px; font-weight: 400; fill: #5f5e5a; }
+      .c-gray-rect { fill: #f1efe8; stroke: #5f5e5a; }
+      .c-purple-rect { fill: #eeedfe; stroke: #534ab7; }
+      .c-teal-rect { fill: #e1f5ee; stroke: #0f6e56; }
+      .c-coral-rect { fill: #faece7; stroke: #993c1d; }
+      .c-green-rect { fill: #eaf3de; stroke: #3b6d11; }
+      .c-amber-rect { fill: #faeeda; stroke: #854f0b; }
+      .c-gray-title { fill: #444441; }
+      .c-gray-sub { fill: #5f5e5a; }
+      .c-purple-title { fill: #3c3489; }
+      .c-purple-sub { fill: #534ab7; }
+      .c-teal-title { fill: #085041; }
+      .c-teal-sub { fill: #0f6e56; }
+      .c-coral-title { fill: #712b13; }
+      .c-coral-sub { fill: #993c1d; }
+      .c-green-title { fill: #27500a; }
+      .c-green-sub { fill: #3b6d11; }
+      .c-amber-title { fill: #633806; }
+      .c-amber-sub { fill: #854f0b; }
+      .leader { stroke: #b4b2a9; stroke-width: 0.5; stroke-dasharray: 3 3; }
+      .divider { stroke: #d3d1c7; stroke-width: 0.5; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrow-coral" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#993c1d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ═══ DEVICE BODY ═══ -->
+  <rect x="196" y="36" width="168" height="300" rx="24" fill="#f1efe8" stroke="#b4b2a9" stroke-width="1.5"/>
+  <rect x="204" y="44" width="152" height="284" rx="19" fill="none" stroke="#d3d1c7" stroke-width="0.5"/>
+
+  <!-- OLED screen -->
+  <rect x="214" y="58" width="132" height="62" rx="6" fill="white" stroke="#b4b2a9" stroke-width="0.5"/>
+  <text class="ts" x="280" y="76" text-anchor="middle" font-size="10" fill="#888780">Clipod  offline</text>
+  <text class="th" x="280" y="91" text-anchor="middle" font-size="11" fill="#1f1f1e">Radiohead — Creep</text>
+  <rect x="214" y="105" width="60" height="4" rx="2" fill="#d3d1c7" opacity="0.5"/>
+  <rect x="214" y="105" width="28" height="4" rx="2" fill="#888780" opacity="0.5"/>
+  <text class="ts" x="280" y="116" text-anchor="middle" font-size="9" fill="#888780">2:14 / 3:58</text>
+
+  <!-- Mode pill -->
+  <rect x="222" y="130" width="116" height="20" rx="10" fill="white" stroke="#b4b2a9" stroke-width="0.5"/>
+  <rect x="222" y="130" width="58" height="20" rx="10" fill="#b4b2a9" opacity="0.5"/>
+  <text class="ts" x="251" y="144" text-anchor="middle" font-size="10" fill="#444441">offline</text>
+  <text class="ts" x="309" y="144" text-anchor="middle" font-size="10" fill="#888780">YouTube</text>
+
+  <!-- Scroll wheel -->
+  <circle cx="280" cy="232" r="56" fill="#f1efe8" stroke="#b4b2a9" stroke-width="1.5"/>
+  <circle cx="280" cy="232" r="56" fill="none" stroke="#d3d1c7" stroke-width="6" stroke-dasharray="3 7"/>
+  <circle cx="280" cy="232" r="26" fill="white" stroke="#b4b2a9" stroke-width="1"/>
+  <polygon points="274,223 274,241 291,232" fill="#888780" opacity="0.6"/>
+  <text class="ts" x="325" y="236" text-anchor="middle" font-size="14" fill="#888780">›</text>
+  <text class="ts" x="236" y="236" text-anchor="middle" font-size="14" fill="#888780">‹</text>
+  <text class="ts" x="280" y="186" text-anchor="middle" font-size="16" fill="#888780">+</text>
+  <text class="ts" x="280" y="284" text-anchor="middle" font-size="16" fill="#888780">−</text>
+
+  <!-- Bottom ports -->
+  <ellipse cx="234" cy="320" rx="5" ry="7" fill="white" stroke="#b4b2a9" stroke-width="1"/>
+  <rect x="268" y="314" width="20" height="12" rx="5" fill="white" stroke="#b4b2a9" stroke-width="1"/>
+  <rect x="308" y="316" width="14" height="8" rx="2" fill="white" stroke="#b4b2a9" stroke-width="1"/>
+
+  <!-- Belt clip -->
+  <rect x="189" y="100" width="7" height="68" rx="3" fill="#f1efe8" stroke="#b4b2a9" stroke-width="1"/>
+  <rect x="182" y="106" width="8" height="56" rx="2" fill="none" stroke="#b4b2a9" stroke-width="1"/>
+
+  <!-- Size bracket -->
+  <line x1="374" y1="36" x2="374" y2="336" class="divider"/>
+  <line x1="370" y1="36" x2="378" y2="36" class="divider"/>
+  <line x1="370" y1="336" x2="378" y2="336" class="divider"/>
+  <text class="ts" x="386" y="192" font-size="11" fill="#888780">~7.5 cm</text>
+
+  <!-- RIGHT LABELS -->
+  <line x1="346" y1="89" x2="400" y2="68" class="leader"/>
+  <circle cx="346" cy="89" r="2" fill="#888780"/>
+  <text class="ts" x="406" y="66" fill="#444441">1.3" OLED (128×64)</text>
+  <text class="ts" x="406" y="79" font-size="11" fill="#888780">SSD1306 · luma.oled</text>
+
+  <line x1="338" y1="140" x2="400" y2="130" class="leader"/>
+  <circle cx="338" cy="140" r="2" fill="#888780"/>
+  <text class="ts" x="406" y="128" fill="#444441">Mode button (side)</text>
+  <text class="ts" x="406" y="141" font-size="11" fill="#888780">offline / YouTube toggle</text>
+
+  <line x1="336" y1="232" x2="400" y2="200" class="leader"/>
+  <circle cx="336" cy="232" r="2" fill="#888780"/>
+  <text class="ts" x="406" y="198" fill="#444441">Scroll wheel (6 actions)</text>
+  <text class="ts" x="406" y="211" font-size="11" fill="#888780">play/pause · skip · vol up/down</text>
+
+  <line x1="234" y1="327" x2="400" y2="300" class="leader"/>
+  <circle cx="234" cy="327" r="2" fill="#888780"/>
+  <text class="ts" x="406" y="298" fill="#444441">3.5mm jack — wired only</text>
+  <text class="ts" x="406" y="311" font-size="11" fill="#888780">no Bluetooth in v1</text>
+
+  <line x1="278" y1="326" x2="400" y2="336" class="leader"/>
+  <circle cx="278" cy="326" r="2" fill="#888780"/>
+  <text class="ts" x="406" y="334" fill="#444441">USB-C (charge only)</text>
+
+  <line x1="315" y1="324" x2="400" y2="358" class="leader"/>
+  <circle cx="315" cy="324" r="2" fill="#888780"/>
+  <text class="ts" x="406" y="356" fill="#444441">microSD · up to 1TB</text>
+
+  <!-- LEFT LABEL -->
+  <line x1="196" y1="134" x2="156" y2="112" class="leader"/>
+  <circle cx="196" cy="134" r="2" fill="#888780"/>
+  <text class="ts" x="150" y="110" text-anchor="end" fill="#444441">Belt clip</text>
+  <text class="ts" x="150" y="123" text-anchor="end" font-size="11" fill="#888780">spring steel</text>
+
+  <!-- Wi-Fi pill -->
+  <rect x="394" y="236" width="36" height="16" rx="8" fill="#e1f5ee" stroke="#0f6e56" stroke-width="0.5"/>
+  <text x="412" y="248" text-anchor="middle" font-size="9" font-weight="500" font-family="Arial" fill="#085041">Wi-Fi</text>
+  <line x1="364" y1="244" x2="394" y2="244" class="leader"/>
+  <text class="ts" x="434" y="248" font-size="11" fill="#444441">2.4GHz 802.11n</text>
+  <text class="ts" x="434" y="260" font-size="11" fill="#888780">setup + YT streaming</text>
+
+  <!-- ═══ BOM SECTION ═══ -->
+  <line x1="40" y1="385" x2="640" y2="385" class="divider"/>
+  <text class="th" x="40" y="378" font-size="12" fill="#1f1f1e">Hardware (1,000-unit BOM ~$28.60)</text>
+
+  <rect x="40" y="394" width="130" height="52" rx="8" class="c-gray-rect" stroke-width="0.5"/>
+  <text class="th" x="105" y="416" text-anchor="middle" class="c-gray-title">RK3128 SoC</text>
+  <text class="ts" x="105" y="434" text-anchor="middle" class="c-gray-sub">quad A7 · $4.00</text>
+
+  <rect x="184" y="394" width="130" height="52" rx="8" class="c-gray-rect" stroke-width="0.5"/>
+  <text class="th" x="249" y="416" text-anchor="middle" class="c-gray-title">PCM5102 codec</text>
+  <text class="ts" x="249" y="434" text-anchor="middle" class="c-gray-sub">I2S audio · $1.20</text>
+
+  <rect x="328" y="394" width="130" height="52" rx="8" class="c-gray-rect" stroke-width="0.5"/>
+  <text class="th" x="393" y="416" text-anchor="middle" class="c-gray-title">600mAh LiPo</text>
+  <text class="ts" x="393" y="434" text-anchor="middle" class="c-gray-sub">10–14 hr · $2.00</text>
+
+  <rect x="472" y="394" width="168" height="52" rx="8" class="c-gray-rect" stroke-width="0.5"/>
+  <text class="th" x="556" y="416" text-anchor="middle" class="c-gray-title">SSD1306 OLED</text>
+  <text class="ts" x="556" y="434" text-anchor="middle" class="c-gray-sub">128×64 · I2C · $2.20</text>
+
+  <!-- ═══ SOFTWARE STACK ═══ -->
+  <line x1="40" y1="468" x2="640" y2="468" class="divider"/>
+  <text class="th" x="40" y="461" font-size="12" fill="#1f1f1e">Linux software stack (Buildroot · kernel 5.15 LTS · runit init)</text>
+
+  <!-- Input nodes -->
+  <rect x="40" y="476" width="148" height="52" rx="8" class="c-gray-rect" stroke-width="0.5"/>
+  <text class="th" x="114" y="498" text-anchor="middle" class="c-gray-title">button-handler</text>
+  <text class="ts" x="114" y="516" text-anchor="middle" class="c-gray-sub">GPIO · /dev/input</text>
+
+  <rect x="40" y="540" width="148" height="52" rx="8" class="c-gray-rect" stroke-width="0.5"/>
+  <text class="th" x="114" y="562" text-anchor="middle" class="c-gray-title">microSD</text>
+  <text class="ts" x="114" y="580" text-anchor="middle" class="c-gray-sub">/mnt/sdcard/Music</text>
+
+  <rect x="40" y="604" width="148" height="52" rx="8" class="c-gray-rect" stroke-width="0.5"/>
+  <text class="th" x="114" y="626" text-anchor="middle" class="c-gray-title">Wi-Fi 2.4GHz</text>
+  <text class="ts" x="114" y="644" text-anchor="middle" class="c-gray-sub">YouTube API + CDN</text>
+
+  <!-- Arrows button-handler → MPD and yt-client -->
+  <path d="M188 502 L216 502 L216 566 L244 566" fill="none" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <path d="M188 502 L216 502 L216 630 L244 630" fill="none" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Dashed feeds -->
+  <line x1="188" y1="566" x2="244" y2="566" stroke="#d3d1c7" stroke-width="0.5" stroke-dasharray="3 3"/>
+  <line x1="188" y1="630" x2="244" y2="630" stroke="#d3d1c7" stroke-width="0.5" stroke-dasharray="3 3"/>
+
+  <!-- oled-ui -->
+  <rect x="244" y="476" width="162" height="52" rx="8" class="c-gray-rect" stroke-width="0.5"/>
+  <text class="th" x="325" y="498" text-anchor="middle" class="c-gray-title">oled-ui daemon</text>
+  <text class="ts" x="325" y="516" text-anchor="middle" class="c-gray-sub">I2C · luma.oled · Python</text>
+
+  <!-- MPD -->
+  <rect x="244" y="540" width="162" height="52" rx="8" class="c-purple-rect" stroke-width="0.5"/>
+  <text class="th" x="325" y="562" text-anchor="middle" class="c-purple-title">MPD daemon</text>
+  <text class="ts" x="325" y="580" text-anchor="middle" class="c-purple-sub">MP3 · FLAC · OGG · AAC</text>
+
+  <!-- yt-client -->
+  <rect x="244" y="604" width="162" height="52" rx="8" class="c-purple-rect" stroke-width="0.5"/>
+  <text class="th" x="325" y="626" text-anchor="middle" class="c-purple-title">yt-client daemon</text>
+  <text class="ts" x="325" y="644" text-anchor="middle" class="c-purple-sub">yt-dlp · ffmpeg · port 8081</text>
+
+  <!-- Both → ALSA -->
+  <path d="M406 566 L450 566 L450 638 L492 638" fill="none" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+  <path d="M406 630 L450 630 L450 638 L492 638" fill="none" stroke="#888780" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- ALSA -->
+  <rect x="492" y="612" width="148" height="52" rx="8" class="c-teal-rect" stroke-width="0.5"/>
+  <text class="th" x="566" y="634" text-anchor="middle" class="c-teal-title">ALSA audio out</text>
+  <text class="ts" x="566" y="652" text-anchor="middle" class="c-teal-sub">3.5mm · PCM5102</text>
+
+  <!-- Status reads (dashed) -->
+  <line x1="406" y1="502" x2="492" y2="566" stroke="#d3d1c7" stroke-width="0.5" stroke-dasharray="3 3"/>
+  <line x1="406" y1="502" x2="492" y2="630" stroke="#d3d1c7" stroke-width="0.5" stroke-dasharray="3 3"/>
+  <text class="ts" x="446" y="526" text-anchor="middle" font-size="10" fill="#888780">reads status</text>
+
+  <!-- setup-server -->
+  <rect x="492" y="476" width="148" height="52" rx="8" class="c-coral-rect" stroke-width="0.5"/>
+  <text class="th" x="566" y="498" text-anchor="middle" class="c-coral-title">setup-server</text>
+  <text class="ts" x="566" y="516" text-anchor="middle" class="c-coral-sub">HTTP · Wi-Fi creds · API key</text>
+
+  <!-- ═══ SETUP FLOW ═══ -->
+  <line x1="40" y1="686" x2="640" y2="686" class="divider"/>
+  <text class="th" x="40" y="679" font-size="12" fill="#1f1f1e">First-time setup — phone used once, device standalone after</text>
+
+  <rect x="40" y="694" width="170" height="56" rx="8" class="c-coral-rect" stroke-width="0.5"/>
+  <text class="th" x="125" y="718" text-anchor="middle" class="c-coral-title">1. Hotspot on</text>
+  <text class="ts" x="125" y="736" text-anchor="middle" class="c-coral-sub">"Clipod-Setup" AP</text>
+  <line x1="210" y1="722" x2="232" y2="722" stroke="#993c1d" stroke-width="1" marker-end="url(#arrow-coral)"/>
+
+  <rect x="232" y="694" width="170" height="56" rx="8" class="c-coral-rect" stroke-width="0.5"/>
+  <text class="th" x="317" y="718" text-anchor="middle" class="c-coral-title">2. Browser 192.168.4.1</text>
+  <text class="ts" x="317" y="736" text-anchor="middle" class="c-coral-sub">enter Wi-Fi + API key</text>
+  <line x1="402" y1="722" x2="424" y2="722" stroke="#993c1d" stroke-width="1" marker-end="url(#arrow-coral)"/>
+
+  <rect x="424" y="694" width="216" height="56" rx="8" class="c-coral-rect" stroke-width="0.5"/>
+  <text class="th" x="532" y="718" text-anchor="middle" class="c-coral-title">3. Companion app — transfer files</text>
+  <text class="ts" x="532" y="736" text-anchor="middle" class="c-coral-sub">HTTP POST → /mnt/sdcard/Music</text>
+
+  <!-- ═══ TARGETS ═══ -->
+  <line x1="40" y1="778" x2="640" y2="778" class="divider"/>
+  <text class="th" x="40" y="771" font-size="12" fill="#1f1f1e">Targets</text>
+
+  <rect x="40" y="787" width="130" height="52" rx="8" class="c-teal-rect" stroke-width="0.5"/>
+  <text class="th" x="105" y="809" text-anchor="middle" class="c-teal-title">~$28.60 BOM</text>
+  <text class="ts" x="105" y="827" text-anchor="middle" class="c-teal-sub">at 1,000 units</text>
+
+  <rect x="184" y="787" width="130" height="52" rx="8" class="c-teal-rect" stroke-width="0.5"/>
+  <text class="th" x="249" y="809" text-anchor="middle" class="c-teal-title">$65 retail</text>
+  <text class="ts" x="249" y="827" text-anchor="middle" class="c-teal-sub">no subscription</text>
+
+  <rect x="328" y="787" width="130" height="52" rx="8" class="c-teal-rect" stroke-width="0.5"/>
+  <text class="th" x="393" y="809" text-anchor="middle" class="c-teal-title">10–14 hr battery</text>
+  <text class="ts" x="393" y="827" text-anchor="middle" class="c-teal-sub">600mAh · USB-C</text>
+
+  <rect x="472" y="787" width="168" height="52" rx="8" class="c-teal-rect" stroke-width="0.5"/>
+  <text class="th" x="556" y="809" text-anchor="middle" class="c-teal-title">45 × 45 × 8mm</text>
+  <text class="ts" x="556" y="827" text-anchor="middle" class="c-teal-sub">under 25g · spring clip</text>
+
+  <!-- ═══ LEGAL ═══ -->
+  <line x1="40" y1="860" x2="640" y2="860" class="divider"/>
+  <text class="th" x="40" y="853" font-size="12" fill="#1f1f1e">Legal posture</text>
+
+  <rect x="40" y="868" width="280" height="52" rx="8" class="c-green-rect" stroke-width="0.5"/>
+  <text class="th" x="180" y="890" text-anchor="middle" class="c-green-title">Hardware + MPD — fully legal</text>
+  <text class="ts" x="180" y="908" text-anchor="middle" class="c-green-sub">Linux GPL · no DRM circumvention</text>
+
+  <rect x="336" y="868" width="304" height="52" rx="8" class="c-amber-rect" stroke-width="0.5"/>
+  <text class="th" x="488" y="890" text-anchor="middle" class="c-amber-title">yt-dlp streaming — grey area</text>
+  <text class="ts" x="488" y="908" text-anchor="middle" class="c-amber-sub">ToS civil risk · user installs yt-dlp themselves</text>
+</svg>
